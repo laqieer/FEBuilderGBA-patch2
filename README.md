@@ -40,6 +40,7 @@ To contribute patches:
 2. Add your patch to the appropriate game directory
 3. Follow the existing patch structure (PATCH_*.txt descriptor file + assets)
 4. Submit a pull request
+5. Wait for review and merge
 
 ## Patch Structure
 
