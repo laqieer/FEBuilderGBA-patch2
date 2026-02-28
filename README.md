@@ -25,12 +25,28 @@ git submodule update --init --recursive
 
 ## Mirrors
 
-For users in mainland China, a Gitee mirror is kept in sync automatically:
+For users in mainland China, a Gitee mirror is kept in sync automatically on every push to `master`:
 
 - **GitHub**: `https://github.com/laqieer/FEBuilderGBA-patch2.git`
 - **Gitee**: `https://gitee.com/laqieer/FEBuilderGBA-patch2.git`
 
 FEBuilderGBA automatically selects the appropriate source based on the language / release source setting in Options.
+
+### Setting up the GITEE_TOKEN secret
+
+The mirror workflow (`.github/workflows/sync-to-gitee.yml`) requires a `GITEE_TOKEN` secret to authenticate with Gitee:
+
+1. **Generate a Gitee personal access token**
+   - Go to [Gitee Settings → Private Tokens](https://gitee.com/profile/personal_access_tokens)
+   - Click **Generate new token**
+   - Give it a name (e.g. `github-mirror`), enable the **projects** scope, and save the token
+
+2. **Add the secret to this repository**
+   - Go to **Settings → Secrets and variables → Actions** in this GitHub repository
+   - Click **New repository secret**
+   - Name: `GITEE_TOKEN`, Value: the token generated above
+
+3. **Verify** — push any commit to `master` and check the **Actions** tab to confirm the mirror workflow runs successfully
 
 ## Contributing
 
