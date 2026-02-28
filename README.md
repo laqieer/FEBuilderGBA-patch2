@@ -12,7 +12,8 @@ This repository contains patches for FEBuilderGBA, separated from the main repos
 
 ## Version Tracking
 
-The version is tracked in `version.txt` in the format `YYYYMMDD.HH`.
+Versioning is handled via git — the commit history is the version history.
+To check the current version: `git log -1 --format="%h %s"`
 
 ## Usage
 
