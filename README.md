@@ -23,6 +23,15 @@ This repository is included in the main FEBuilderGBA repository as a git submodu
 git submodule update --init --recursive
 ```
 
+## Mirrors
+
+For users in mainland China, a Gitee mirror is kept in sync automatically:
+
+- **GitHub**: `https://github.com/laqieer/FEBuilderGBA-patch2.git`
+- **Gitee**: `https://gitee.com/laqieer/FEBuilderGBA-patch2.git`
+
+FEBuilderGBA automatically selects the appropriate source based on the language / release source setting in Options.
+
 ## Contributing
 
 To contribute patches:
