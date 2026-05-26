@@ -1,0 +1,3 @@
+# Patch installer backup files — auto-created before patch application
+**/.backup_PATCH_*.txt
+.backup_PATCH_*.txt
